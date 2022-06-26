@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>
+        Conversions scientific calculator
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b4d13911b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="conv.css">
+    <script src="conv.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+    <h2>Conversions</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                Kilogram <input type="number" oninput="kgtopound(this.value)" onchange="kgtopound(this.value)">
+            </div>
+            <div class="col-sm-2">
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="col-lg-4">
+                Pounds <span id="poundval"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5">
+                kilometer <input type="number" oninput="kmtomiles(this.value)" onchange="kmtomiles(this.value)">
+            </div>
+            <div class="col-sm-2">
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="col-lg-4">
+                Miles <span style="margin-left: 48px;" id="milesval"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                Farenhit <input type="number" style="margin-left: 36px;" oninput="ftoc(this.value)" onchange="ftoc(this.value)">
+            </div>
+            <div class="col-sm-2">
+                <i class="fa-solid fa-angles-right"></i>
+            </div>
+            <div class="col-lg-4">
+                Celcius <span id="celcius"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
